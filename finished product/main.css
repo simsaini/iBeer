@@ -1,0 +1,160 @@
+/*
+
+FONTS:
+
+'Josefin Sans'
+'Noto Serif'
+'Dancing Script'
+
+COLORS:
+
+light tan: #eeebda
+
+*/
+body{
+    font-family: 'Noto Serif', serif;
+    line-height: 1.8;
+    margin: 0;
+    background-color: #eeebda;
+}
+h1, h2, h3{
+    font-family: "Josefin Sans", sans-serif;
+    margin-top: 0;
+}
+img{
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+.wrapper{
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    /*
+        TODO:
+        - Center up the page
+        - Create a flexbox containerer for
+        the major page sections
+    */
+}
+#site-header{
+  display: flex;
+  flex-direction: column;
+}
+#site-header div{
+    text-align: center;
+    padding: 60px 0 120px 0;
+    font-size: 4em;
+    background-image: url("img/header-img.jpg");
+    background-size: cover;
+    background-position: right bottom;
+}
+#site-header div h1,
+#site-header div h3{
+    margin: 0;
+    line-height: 1;
+    position: relative;
+}
+#site-header div h1{
+    top: 20px;
+}
+
+#site-header div h3{
+    color: white;
+    bottom: 20px;
+    text-shadow: 0 5px 8px rgba( 0, 0, 0, 0.3 );
+    font-family: 'Dancing Script';
+}
+#main-navigation{
+    background: #444;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#main-navigation a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 20px;
+}
+#main-navigation #logo{
+    margin-right: 400px;
+}
+main{
+    padding: 20px;
+    background-color: #444;
+    box-shadow: -5px 5px 8px rgba( 0, 0, 0, 0.3 );
+    flex-basis: 50%;
+    position: relative;
+    bottom: 50px;
+}
+aside{
+    padding: 20px;
+    background-color: #eee;
+    box-shadow: 5px 5px 8px rgba( 0, 0, 0, 0.3 );
+    flex-basis: 20%;
+    position: relative;
+    bottom: 50px;
+}
+aside h3{
+    text-align: center;
+    margin: 0 0 10px 0;
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+aside img{
+    border-radius: 50%;
+    margin-bottom: 30px;
+    border: 2px solid white;
+}
+article{
+    background-color: white;
+    box-shadow: -5px 5px 8px rgba( 0, 0, 0, 0.3 );
+    padding: 20px;
+    margin-bottom: 20px;
+}
+article h2{
+    line-height: 1em;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 0 10px 0;
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid #ccc;
+    text-transform: uppercase;
+}
+article time{
+    font-size: 0.8em;
+    text-align: center;
+    display: block;
+    margin-bottom: 30px;
+    color: #666;
+}
+article img{
+  float: right;
+  width: 50%;
+}
+article footer p{
+  line-height: 1em;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 10px;
+  padding-top: 20px;
+  border-top: 1px solid #ccc;
+  text-transform: uppercase;
+}
+#site-footer{
+    background: #333;
+    text-align: center;
+    color: white;
+    padding: 15px;
+    /*
+        TODO:
+        - Style the site footer
+    */
+}
